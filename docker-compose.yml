@@ -1,0 +1,11 @@
+---
+version: '3.5'
+
+services:
+  app: 
+    container_name: dash_app
+    build:  # this construct sets the path that docker searches to the current dir "."; dockerfile command is then relative to context
+      context: .
+      dockerfile: Docker/Dockerfile
+    ports:
+      - "8051:8050"
