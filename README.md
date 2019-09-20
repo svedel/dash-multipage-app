@@ -1,14 +1,19 @@
 # entrypoint
+
+## Raw python file execution
 Navigate to folder of app.py and run
-
+```
 python index.py
+```
 
-The app is then available on
+The app is then available on `http://localhost:8050/`
 
-http://localhost:8051/
-
-THIS APP EMBEDS THE v4 SINGLE-PAGE APP INTO A MULTIPAGE APP
-THIS IS PICKING UP AFTER v1-v4 FOR SINGLE-PAGE APPS AND v1 FOR MULTIPAGE.
+## Docker approach
+Run from repo root
+```
+docker-compose up -d --build
+```
+The app is then available on `http://localhost:8051/`
 
 # reference
 Following this tutorial
